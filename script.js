@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
   const reviewsContainer = document.getElementById('reviewsContainer');
   const JSONBIN_URL = 'https://api.jsonbin.io/b/66522aede41b4d34e4f94999';
-  const JSONBIN_SECRET = '$2a$10$4.3RbxEVu9P9KRB0nS7KKO6oX6BO14OvSqDa3ijzUgiDTVe..VWla'; // Замените на ваш секретный ключ
+  const JSONBIN_SECRET = '$2a$10$4.3RbxEvJ9P9KRB0nS7K.KO6oXGBO41ovSqDa3ijzUg1DTVe..WVLa'; // Ваш X-MASTER-KEY
 
   async function fetchReviews() {
     try {
@@ -73,6 +73,7 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   loadReviews();
+});
 
   const hotelsData = {
     odesa: [
@@ -129,4 +130,3 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });
   }
-});
