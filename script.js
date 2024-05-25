@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
   const reviewsContainer = document.getElementById('reviewsContainer');
-  const JSONBIN_URL = 'https://api.jsonbin.io/b/66522aede41b4d34e4f94999';
+  const JSONBIN_URL = 'https://api.jsonbin.io/v3/b/665234d7ad19ca34f86f07a6';
   const JSONBIN_SECRET = '$2a$10$4.3RbxEvJ9P9KRB0nS7K.KO6oXGBO41ovSqDa3ijzUg1DTVe..WVLa'; // Ваш X-MASTER-KEY
 
   async function fetchReviews() {
