@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>Travel Hotel</title>
+  <script>
+    function toggleMenu() {
+      const navLinksMobile = document.querySelector('.nav__links--mobile');
+      navLinksMobile.classList.toggle('active');
+    }
+  </script>
+</head>
+<body>
+  <nav>
+    <div class="nav__logo">Travel Hotel</div>
+    <div class="nav__toggle" onclick="toggleMenu()">&#9776;</div>
+    <ul class="nav__links">
+      <li class="link"><a href="index.html">Головна</a></li>
+      <li class="link"><a href="leisure.html">Дозвілля</a></li>
+      <li class="link"><a href="hotels.html">Готелі</a></li>
+      <li class="link"><a href="#">Про нас</a></li>
+    </ul>
+    <ul class="nav__links nav__links--mobile">
+      <li class="link"><a href="index.html">Головна</a></li>
+      <li class="link"><a href="leisure.html">Дозвілля</a></li>
+      <li class="link"><a href="hotels.html">Готелі</a></li>
+      <li class="link"><a href="#">Про нас</a></li>
+    </ul>
+  </nav>
+  <header class="section__container header__container">
+    <div class="header__image__container">
+      <div class="header__content">
+        <h1>Насолоджуйся відпочинком своєї мрії</h1>
+        <p>Бронювання готелів та пакетів проживання за низькими цінами.</p>
+      </div>
+      <div class="booking__container">
+        <form>
+          <div class="form__group">
+            <div class="input__group">
+              <input type="text" />
+              <label>Місце</label>
+            </div>
+            <p>Куди ви збираєтесь?</p>
+          </div>
+          <div class="form__group">
+            <div class="input__group">
+              <input type="text" />
+              <label>Заселення</label>
+            </div>
+            <p>Додати дату</p>
+          </div>
+          <div class="form__group">
+            <div class="input__group">
+              <input type="text" />
+              <label>Виселення</label>
+            </div>
+            <p>Додати дату</p>
+          </div>
+          <div class="form__group">
+            <div class="input__group">
+              <input type="text" />
+              <label>Кількість людей</label>
+            </div>
+            <p>Додати кількість</p>
+          </div>
+        </form>
+        <button class="btn"><i class="ri-search-line"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <section class="section__container popular__container">
+    <h2 class="section__header">Популярні готелі</h2>
+    <div class="popular__grid">
+      <div class="popular__card">
+        <img src="assets/hotel-1.jpg" alt="popular hotel" />
+        <div class="popular__content">
+          <div class="popular__card__header">
+            <h4>Готель Швейцарський</h4>
+            <h4>UAH 3300</h4>
+          </div>
+          <p>Готель у районі Центр Львова, Львів</p>
+        </div>
+      </div>
+      <div class="popular__card">
+        <img src="assets/hotel-2.jpg" alt="popular hotel" />
+        <div class="popular__content">
+          <div class="popular__card__header">
+            <h4>Premier Palace Hotel</h4>
+            <h4>UAH 7700</h4>
+          </div>
+          <p>Готель у районі Шевченківський, Київ</p>
+        </div>
+      </div>
+      <div class="popular__card">
+        <img src="assets/hotel-3.jpg" alt="popular hotel" />
+        <div class="popular__content">
+          <div class="popular__card__header">
+            <h4>Hotel Panorama DeLuxe</h4>
+            <h4>UAH 6000</h4>
+          </div>
+          <p>Готель у районі Приморський, Одеса</p>
+        </div>
+      </div>
+      <div class="popular__card">
+        <img src="assets/hotel-4.jpg" alt="popular hotel" />
+        <div class="popular__content">
+          <div class="popular__card__header">
+            <h4>Hotel Misto SPA & FITNESS</h4>
+            <h4>UAH 3000</h4>
+          </div>
+          <p>Харків</p>
+        </div>
+      </div>
+      <div class="popular__card">
+        <img src="assets/hotel-5.jpg" alt="popular hotel" />
+        <div class="popular__content">
+          <div class="popular__card__header">
+            <h4>Tsunami Spa Hotel</h4>
+            <h4>UAH 4800</h4>
+          </div>
+          <p>Дніпро</p>
+        </div>
+      </div>
+      <div class="popular__card">
+        <img src="assets/hotel-6.jpg" alt="popular hotel" />
+        <div class="popular__content">
+          <div class="popular__card__header">
+            <h4>Phoenix Relax Park</h4>
+            <h4>UAH 2200</h4>
+          </div>
+          <p>Буковель</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="client">
+    <div class="section__container client__container">
+      <h2 class="section__header">Відгуки наших клієнтів</h2>
+      <!-- Форма для добавления новых отзывов -->
+      <div class="add-review">
+        <h3>Додайте свій відгук</h3>
+        <form id="reviewForm">
+          <div class="form__group">
+            <input type="text" id="reviewText" placeholder="Ваш відгук" required />
+          </div>
+          <button type="submit" class="btn">Додати</button>
+        </form>
+      </div>
+      <!-- Существующие отзывы -->
+      <div class="client__grid" id="reviewsContainer">
+        <div class="client__card">
+          
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="section__container footer__container">
+      <div class="footer__col">
+        <h3>Travel Hotel</h3>
+        <p>
+         Travel Hotel - це прототип веб-сайту для бронювання готелів, який пропонує простий і зручний спосіб пошуку та бронювання житла по всій Україні.
+        </p>
+        <p>
+          Завдяки зручному інтерфейсу та широкому вибору готелів,
+          Travel Hotel має на меті забезпечити мандрівникам пошук ідеального відпочинку.
+        </p>
+      </div>
+      <div class="footer__col">
+        <h4>Головна</h4>
+        <p>Про нас</p>
+        <p>Відгуки</p>
+        <p>Готелі</p>
+      </div>
+      <div class="footer__col">
+        <p>FAQs</p>
+        <p>Terms & Conditions</p>
+        <p>Privacy Policy</p>
+      </div>
+      <div class="footer__col">
+        <p>Social Media</p>
+        <p>Help Center</p>
+      </div>
+    </div>
+    <div class="footer__bar">
+      <p>© 2023 Всі права захищені.</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

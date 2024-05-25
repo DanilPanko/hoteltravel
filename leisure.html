@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>Travel Hotel - Дозвілля</title>
+</head>
+<body>
+  <nav>
+    <div class="nav__logo">Travel Hotel</div>
+    <div class="nav__toggle" onclick="toggleMenu()">&#9776;</div>
+    <ul class="nav__links">
+      <li class="link"><a href="index.html">Головна</a></li>
+      <li class="link"><a href="leisure.html">Дозвілля</a></li>
+      <li class="link"><a href="hotels.html">Готелі</a></li>
+      <li class="link"><a href="#">Про нас</a></li>
+    </ul>
+    <ul class="nav__links nav__links--mobile">
+      <li class="link"><a href="index.html">Головна</a></li>
+      <li class="link"><a href="leisure.html">Дозвілля</a></li>
+      <li class="link"><a href="hotels.html">Готелі</a></li>
+      <li class="link"><a href="#">Про нас</a></li>
+    </ul>
+  </nav>
+  <header class="section__container header__container">
+    <div class="header__image__container">
+      <div class="header__content">
+        <h1>Екскурсії, заходи та розваги</h1>
+        <p>Відкрийте для себе нові цікаві пам'ятки й варіанти дозвілля</p>
+      </div>
+    </div>
+  </header>
+
+  <!-- Добавьте контент страницы "Дозвілля" здесь -->
+  <section class="section__container">
+    <h2 class="section__header">Дозвілля</h2>
+    <p>Контент страницы "Дозвілля" буде тут.</p>
+  </section>
+
+  <footer class="footer">
+    <div class="section__container footer__container">
+      <div class="footer__col">
+        <h3>Travel Hotel</h3>
+        <p>
+         Travel Hotel - це прототип веб-сайту для бронювання готелів, який пропонує простий і зручний спосіб пошуку та бронювання житла по всій Україні.
+        </p>
+        <p>
+          Завдяки зручному інтерфейсу та широкому вибору готелів,
+          Travel Hotel має на меті забезпечити мандрівникам пошук ідеального відпочинку.
+        </p>
+      </div>
+      <div class="footer__col">
+        <h4>Головна</h4>
+        <p><a href="index.html">Про нас</a></p>
+        <p><a href="leisure.html">Відгуки</a></p>
+        <p><a href="hotels.html">Готелі</a></p>
+      </div>
+      <div class="footer__col">
+        <h4>Додатково</h4>
+        <p><a href="#">FAQs</a></p>
+        <p><a href="#">Terms & Conditions</a></p>
+        <p><a href="#">Privacy Policy</a></p>
+      </div>
+      <div class="footer__col">
+        <h4>Контакти</h4>
+        <p><a href="#">Social Media</a></p>
+        <p><a href="#">Help Center</a></p>
+      </div>
+    </div>
+    <div class="footer__bar">
+      © 2023 Всі права захищені.
+    </div>
+  </footer>
+  <script>
+    function toggleMenu() {
+      const navLinksMobile = document.querySelector('.nav__links--mobile');
+      navLinksMobile.classList.toggle('active');
+    }
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>
